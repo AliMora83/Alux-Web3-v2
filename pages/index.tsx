@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-tr from-gray-400/[0.50] to-gray-200[0.35]  dark:from-[#080a0b] dark:to-gray-500/[0.1] min-h-screen pb-20 md:pb-10">
+      <div className="bg-gradient-to-tr from-gray-400/[0.50] to-gray-200[0.35]  dark:from-[#080a0b] dark:to-black min-h-screen pb-20 md:pb-10">
         <Header />
 
         <main className="max-w-6xl mx-auto p-2">

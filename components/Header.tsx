@@ -139,7 +139,7 @@ function Header({}: Props) {
 
         <hr className="mt-2 dark:border-[#17303b]" />
 
-        <section className="flex items-center space-x-4 py-10">
+        <section className="flex justify-between items-center uppercase space-x-4 py-10 font-light">
           <div className="cursor-pointer w-32 flex-shrink-0 relative">
             <Link href="/">
               <Image
@@ -159,7 +159,8 @@ function Header({}: Props) {
                         <HiOutlineChevronDown className="flex-shrink-0 text-sm" />
                     </button> */}
 
-          <form className="flex items-center flex-1">
+          {/* Search Code  */}
+          {/* <form className="flex items-center flex-1">
             <label
               htmlFor="voice-search"
               className="sr-only"
@@ -214,7 +215,14 @@ function Header({}: Props) {
                 Search
               </span>
             </button>
-          </form>
+          </form> */}
+          <div>
+            <p className="tracking-widest text-sm hover:font-bold duration-200 ease-out">
+              The Prime Web3 Real Estate
+              Investment Platform for future
+              Billionaires
+            </p>
+          </div>
 
           <button
             onClick={() => {

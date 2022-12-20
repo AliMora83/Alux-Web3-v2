@@ -352,7 +352,7 @@ function ListingPage({}: Props) {
         <main className="max-w-6xl mx-auto p-2 flex flex-col lg:flex-row space-y-10 space-x-5 pr-10 my-3">
           <div className="p-10 mx-auto lg:mx-0 max-w-md xl:max-w-6xl">
             <ListingCard noHover>
-              <div className="cursor-default overflow-hidden  group-hover:rotate-1 transition-transform duration-200 ease-out p-10 rounded-lg border dark:border-[#17303b] mx-auto lg:mx-0 max-w-md lg:max-w-md">
+              <div className="cursor-default overflow-hidden  group-hover:rotate-1 transition-transform duration-200 ease-out p-3 rounded-md border dark:border-[#17303b] mx-auto lg:mx-0 max-w-md lg:max-w-md">
                 <MediaRenderer
                   className="rounded-lg"
                   src={listing.asset.image}
