@@ -26,6 +26,10 @@
     .h-btn {
         @apply inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-[#080a0b] rounded-lg border border-[#080a0b] outline-none dark:bg-[#0EA7E6] justify-center space-x-2 dark:hover:text-[#080a0b] hover:text-[#0EA7E6]
     }
+
+    h5 {
+    @apply text-lg font-medium text-gray-500
+    }
 }
 
 /* react-modal */

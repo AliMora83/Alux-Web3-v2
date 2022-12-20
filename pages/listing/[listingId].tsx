@@ -364,13 +364,18 @@ function ListingPage({}: Props) {
           <section className="flex-1 space-y-5">
             <div className="">
               <h1 className="text-lg font-bold">
-                {listing.asset.name}
+                WA Nature Home
               </h1>
-              <p className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2">
+              <p className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pb-2">
                 {listing.asset.description}
               </p>
-              <ul className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2">
-                <li>Property type here</li>
+              <h5 className="text-base font-semibold text-gray-600">
+                {listing.asset.name}
+              </h5>
+              <ul className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2 pl-5">
+                <li>
+                  Property Type: Single Family
+                </li>
                 <li>Bedrooms: 4</li>
                 <li>Bathrooms: 3</li>
                 <li>Square Feet: 2100</li>
@@ -393,18 +398,18 @@ function ListingPage({}: Props) {
             <hr className="px-5 dark:border-[#17303b]" />
 
             <div className="grid grid-cols-2 items-center py-2">
-              <p className="font-bold">
+              <p className="font-bold text-sm">
                 Listing Type:
               </p>
-              <p>
+              <p className="text-sm">
                 {listing.type ===
                 ListingType.Direct
                   ? "Direct Listing"
                   : "Auction Listing"}
               </p>
 
-              <p className="font-bold">
-                Buy it Now Price:
+              <p className="font-bold text-sm">
+                Purchase Price:
               </p>
               <p className="text-xl font-bold">
                 {
@@ -428,8 +433,8 @@ function ListingPage({}: Props) {
                   isMakingBid
                 }
               >
-                <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-md bg-gradient-to-r from-gray-600 to-gray-500 opacity-30 blur transition duration-500 group-hover:opacity-70 w-44"></div>
-                <div className="neonBtn bg-[#080a0b] dark:text-white dark:bg-[#0EA7E6] py-4 px-10 w-44 rounded-md text-white hover:text-[#0EA7E6] dark:hover:text-[#080a0b]">
+                <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-md bg-gradient-to-r from-gray-600 to-gray-500 opacity-30 blur transition duration-500 group-hover:opacity-70 w-36"></div>
+                <div className="neonBtn bg-[#080a0b] dark:text-white dark:bg-[#0EA7E6] py-3 px-5 w-36 rounded-md text-white text-sm hover:text-[#0EA7E6] dark:hover:text-[#080a0b]">
                   {isBuying ||
                   isMakingOffer ||
                   isMakingBid ? (
