@@ -11,7 +11,7 @@ function Footer({}: Props) {
         className="flex flex-col items-center text-white justify-between pb-5 pt-10
           fixed bottom-0 left-0 right-0 space-y-3 mt-5"
       >
-        <a href="https://alimora-portfolio.vercel.app/">
+        <a href="https://www.alux.com/">
           <Image
             className="rounded-full h-6 w-6 hover:scale-110 ease-in-out duration-150"
             src={alux}

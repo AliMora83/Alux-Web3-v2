@@ -14,6 +14,10 @@ module.exports = {
         accent: "#e6e2dc",
         accent2: "#fffdf9",
       },
+      backgroundImage: {
+        "hero-image": "url('/alux_bg.png')",
+        "footer-image": "url('/')",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],

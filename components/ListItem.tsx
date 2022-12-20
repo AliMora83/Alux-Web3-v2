@@ -41,11 +41,11 @@ function ListItem({
   return (
     <main className="overflow-hidden">
       <h5 className="font-medium text-xl">
-        Select an Item you would like to sell
+        Select a Property for sale as NFT.
       </h5>
       <p className="text-xs">
-        Below you will find the Nft's you own in
-        your wallet
+        Here you will find Property Nft's you have
+        uplaoded and are linked to your wallet
       </p>
 
       <div className="p-5 py-8 overflow-x-auto scrollbar-thin scrollbar-thumb-[#0EA7E6] scrollbar-track-[#2c2b2b]">

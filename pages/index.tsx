@@ -46,7 +46,7 @@ const Home: NextPage = () => {
                     <div className="flex flex-col p-2 space-y-5">
                       <div className="flex-1 flex flex-col pb-2 items-center">
                         <MediaRenderer
-                          className="w-80 rounded-lg"
+                          className="rounded-lg h-44"
                           src={
                             listing.asset.image
                           }
@@ -111,6 +111,7 @@ const Home: NextPage = () => {
               ))}
             </div>
           )}
+          <div className="hero-image"></div>
         </main>
         <Footer />
       </div>
