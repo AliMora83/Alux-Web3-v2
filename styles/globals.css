@@ -4,7 +4,7 @@
 
 @layer components {
     .connectWalletBtn {
-        @apply bg-purple-400 text-white font-bold py-2 px-4 rounded cursor-pointer;
+        @apply bg-[#0EA7E6] text-white font-bold py-2 px-4 rounded cursor-pointer;
     }
 
     .headerLink {
@@ -12,7 +12,7 @@
     }
 
     .link {
-        @apply hover:text-purple-400 hover:underline cursor-pointer text-gray-600 dark:text-gray-300;
+        @apply hover:text-[#0EA7E6] hover:underline cursor-pointer text-gray-600 dark:text-gray-300;
     }
 
     .card {
@@ -20,11 +20,11 @@
     }
 
     .neonBtn {
-        @apply relative flex items-center justify-center space-x-4 divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none text-black transition duration-200 hover:text-purple-500 dark:bg-black dark:text-white dark:hover:text-purple-300;
+        @apply relative flex items-center justify-center space-x-4 divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none text-black transition duration-200 hover:text-[#0f5573] dark:bg-black dark:text-white dark:hover:text-[#0EA7E6];
     }
 
     .h-btn {
-        @apply inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-[#080a0b] rounded-lg border border-[#080a0b] outline-none dark:bg-[#caa969] justify-center space-x-2 dark:hover:text-[#080a0b] hover:text-[#caa969]
+        @apply inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-[#080a0b] rounded-lg border border-[#080a0b] outline-none dark:bg-[#0EA7E6] justify-center space-x-2 dark:hover:text-[#080a0b] hover:text-[#0EA7E6]
     }
 }
 
@@ -67,6 +67,6 @@
 
 /* Colors 
 
-#caa969, #fedfa1, #2c2b2b, #080a0b, #ffbb22, #ff8d1b, #e0aa53
+[#0EA7E6], [#0f5573],
 
 # */
