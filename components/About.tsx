@@ -14,7 +14,7 @@ function About({}: Props) {
                     
                     <button
                         type="button"
-                        className="bg-white border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e0aa53]"
+                        className="bg-white border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0EA7E6]"
                     >
                        
                     </button>
@@ -42,7 +42,7 @@ function About({}: Props) {
                 </div>
             </form>
 
-            <p className="text-xs flex space-x-1 items-center text-[#e0aa53]">
+            <p className="text-xs flex space-x-1 items-center text-[#0EA7E6]">
                 <InformationCircleIcon
                     cursor={"pointer"}
                     title="By add ing an item to the marketplace, you're

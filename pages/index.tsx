@@ -67,14 +67,14 @@ const Home: NextPage = () => {
                       </div>
 
                       <p className="flex items-center space-x-1">
-                        <span className="font-md text-black dark:text-white text-sm">
+                        <span className="font-bold text-black dark:text-white text-lg">
                           {
                             listing
                               .buyoutCurrencyValuePerToken
                               .displayValue
                           }
                         </span>
-                        <span className="text-gray-600 text-sm">
+                        <span className="text-gray-600 dark:text-gray-400 text-sm pl-1">
                           {
                             listing
                               .buyoutCurrencyValuePerToken
@@ -89,7 +89,7 @@ const Home: NextPage = () => {
                           listing.type ===
                           ListingType.Direct
                             ? "bg-[#2c2b2b]"
-                            : "bg-[#caa969]",
+                            : "bg-[#0EA7E6]",
                         ].join(" ")}
                       >
                         <p>
