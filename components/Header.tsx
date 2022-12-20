@@ -85,7 +85,7 @@ function Header({}: Props) {
               />
             </ButtonNeon>
 
-            {/* <p className="headerLink">
+            <p className="headerLink">
               <span className="hover:font-bold m-2 ease-in-out duration-200">
                 <a
                   href="https://mumbaifaucet.com/"
@@ -94,21 +94,30 @@ function Header({}: Props) {
                   Get Free Matic
                 </a>
               </span>
-            </p> */}
+            </p>
           </div>
           <section className="static top-5 object-center">
             <ThemeToggler />
           </section>
           <div className="flex items-center space-x-4 text-sm">
-            {/* <p className="headerLink">About</p> */}
+            <p className="headerLink">
+              <span className="hover:font-bold m-2 ease-in-out duration-200">
+                <a
+                  href="https://www.alux.com/"
+                  target="_blank"
+                >
+                  Alux.com
+                </a>
+              </span>
+            </p>
 
             <p className="headerLink">
               <span className="hover:font-bold m-2 ease-in-out duration-200">
                 <a
-                  href="https://alimora-portfolio.vercel.app/"
+                  href="https://api.whatsapp.com/send?phone=18027720076"
                   target="_blank"
                 >
-                  About
+                  Contact
                 </a>
               </span>
             </p>
