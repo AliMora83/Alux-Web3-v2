@@ -369,12 +369,17 @@ function ListingPage({}: Props) {
               <p className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2">
                 {listing.asset.description}
               </p>
-              <p className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2">
-                {listing.asset.typeOfProperty}
-              </p>
+              <ul className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2">
+                <li>Property type here</li>
+                <li>Bedrooms: 4</li>
+                <li>Bathrooms: 3</li>
+                <li>Square Feet: 2100</li>
+                <li>Year Built: 2020</li>
+              </ul>
+
               <p className="flex items-center text-xs pt-2 sm:text-base text-gray-500">
                 <UserCircleIcon className="h-5" />
-                <span className="font-bold pr-1">
+                <span className="font-bold pr-1 text-sm">
                   Seller{" "}
                 </span>
                 {listing.sellerAddress.slice(
@@ -440,7 +445,7 @@ function ListingPage({}: Props) {
                 </div>
               </button>
             </div>
-            <hr className="px-5 dark:border-[#0EA7E6]" />
+            <hr className="px-5 dark:border-[#17303b]" />
           </section>
         </main>
       )}
