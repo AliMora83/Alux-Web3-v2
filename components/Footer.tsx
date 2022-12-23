@@ -9,7 +9,7 @@ function Footer({}: Props) {
     <div>
       <footer
         className="flex flex-col items-center text-white justify-between pb-5 pt-10
-          fixed bottom-0 left-0 right-0 space-y-3 mt-5"
+          space-y-3 mt-5 bottom-0"
       >
         <a href="https://www.alux.com/">
           <Image

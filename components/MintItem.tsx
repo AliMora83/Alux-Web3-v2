@@ -145,7 +145,7 @@ function MintItem({
             required
           />
         </div>
-        <div className="flex flex-row justify-between">
+        <div className="grid grid-cols-2 gap-y-6">
           <div>
             <label
               htmlFor="typeOfProperty"
@@ -166,7 +166,7 @@ function MintItem({
               required
             />
           </div>
-          <div>
+          <div className="ml-auto">
             <label
               htmlFor="bedrooms"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -206,7 +206,7 @@ function MintItem({
               required
             />
           </div>
-          <div>
+          <div className="ml-auto">
             <label
               htmlFor="squareFeet"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -229,7 +229,7 @@ function MintItem({
         </div>
       </form>
 
-      <p className="text-xs flex space-x-1 items-center w-3/5 text-gray-400">
+      <p className="text-xs flex space-x-1 items-center text-gray-400">
         <InformationCircleIcon
           cursor={"pointer"}
           title="By adding your property here, you're

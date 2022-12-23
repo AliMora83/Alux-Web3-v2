@@ -67,6 +67,8 @@ function ListingPage({}: Props) {
     error,
   } = useListing(contract, listingId);
 
+  console.log(listing);
+
   const {
     mutate: makeOffer,
     isLoading: isMakingOffer,
