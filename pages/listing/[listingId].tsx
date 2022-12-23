@@ -374,9 +374,18 @@ function ListingPage({}: Props) {
                 {listing.asset.name}
               </h5>
               <ul className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2 pl-5">
-                <li>Bedrooms: 3</li>
-                <li>Bathrooms: 2</li>
-                <li>Square Feet: 1 470</li>
+                <li>
+                  Bedrooms:{" "}
+                  {listing.asset.bedrooms}
+                </li>
+                <li>
+                  Bathrooms:{" "}
+                  {listing.asset.bathrooms}
+                </li>
+                <li>
+                  Square Feet:{" "}
+                  {listing.asset.squareFeet}
+                </li>
               </ul>
 
               <p className="flex items-center text-xs pt-2 sm:text-base text-gray-500">
