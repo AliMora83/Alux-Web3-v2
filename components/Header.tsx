@@ -147,7 +147,7 @@ function Header({
 
         <hr className="mt-2 dark:border-[#17303b]" />
 
-        <section className="flex justify-between items-center uppercase space-x-4 pt-20 pb-16 font-light">
+        <section className="flex justify-between items-center uppercase space-x-4 pt-10 pb-12 font-light">
           <div className="cursor-pointer w-32 flex-shrink-0 relative">
             <Link href="/">
               <Image
@@ -242,7 +242,7 @@ function Header({
             List Item
           </button>
         </section>
-        <div className="items-center uppercase text-center space-x-4 pb-20 font-light">
+        <div className="items-center uppercase text-center space-x-4 pb-10 font-light">
           <p className="tracking-widest text-base hover:font-bold transition-all duration-500 ease-in-out">
             The Prime Web3 Real Estate Investment
             Platform for future Billionaires
