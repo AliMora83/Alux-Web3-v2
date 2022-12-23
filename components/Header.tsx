@@ -78,7 +78,7 @@ function Header({}: Props) {
           <div className="flex items-center space-x-2 text-sm">
             <ButtonNeon>
               <ConnectWallet
-                className="relative flex items-center space-x-4 divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none text-black transition duration-200 hover:text-[#0EA7E6] dark:bg-black dark:text-white dark:hover:text-[#0EA7E6]"
+                className="relative flex items-center space-x-4 divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none text-black transition duration-200 hover:text-[#0EA7E6] dark:bg-black dark:text-gray-300 dark:hover:text-[#0EA7E6]"
                 colorMode={
                   theme as ColorMode | undefined
                 }
@@ -86,7 +86,7 @@ function Header({}: Props) {
             </ButtonNeon>
 
             <p className="headerLink">
-              <span className="hover:font-bold m-2 ease-in-out duration-200">
+              <span className="hover:font-bold m-2 ease-in-out duration-200 dark:text-gray-300">
                 <a
                   href="https://mumbaifaucet.com/"
                   target="_blank"
@@ -101,7 +101,7 @@ function Header({}: Props) {
           </section>
           <div className="flex items-center space-x-4 text-sm">
             <p className="headerLink">
-              <span className="hover:font-bold m-2 ease-in-out duration-200">
+              <span className="hover:font-bold m-2 ease-in-out duration-200 dark:text-gray-300">
                 <a
                   href="https://www.alux.com/"
                   target="_blank"
@@ -112,7 +112,7 @@ function Header({}: Props) {
             </p>
 
             <p className="headerLink">
-              <span className="hover:font-bold m-2 ease-in-out duration-200">
+              <span className="hover:font-bold m-2 ease-in-out duration-200 dark:text-gray-300">
                 <a
                   href="https://api.whatsapp.com/send?phone=18027720076"
                   target="_blank"
@@ -127,7 +127,7 @@ function Header({}: Props) {
               className="group relative cursor-pointer"
             >
               <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-[#2c2b2b] to-[#2c2b2b] dark:bg-gradient-to-r dark:from-[#0f5573] dark:to-[#0EA7E6] opacity-20 blur transition duration-1000 group-hover:opacity-60"></div>
-              <div className="relative flex items-center divide-gray-600 rounded-lg bg-white px-4 py-4 leading-none text-black transition duration-200 hover:text-[#0EA7E6] dark:bg-black dark:text-white dark:hover:text-[#0EA7E6] justify-center">
+              <div className="relative flex items-center divide-gray-600 rounded-lg bg-white px-4 py-4 leading-none text-black transition duration-200 hover:text-[#0EA7E6] dark:bg-black dark:text-gray-300 dark:hover:text-[#0EA7E6] justify-center">
                 <span className="hidden md:mr-4 md:inline-flex">
                   Add to Inventory
                 </span>

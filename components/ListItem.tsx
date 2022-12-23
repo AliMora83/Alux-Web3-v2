@@ -43,9 +43,9 @@ function ListItem({
       <h5 className="font-medium text-xl">
         Select a Property for sale as NFT.
       </h5>
-      <p className="text-xs">
-        Here you will find Property Nft's you have
-        uplaoded and are linked to your wallet
+      <p className="text-xs dark:text-gray-300">
+        Here you will find Property NFT's you have
+        uploaded and are linked to your wallet
       </p>
 
       <div className="p-5 py-8 overflow-x-auto scrollbar-thin scrollbar-thumb-[#0EA7E6] scrollbar-track-[#2c2b2b]">

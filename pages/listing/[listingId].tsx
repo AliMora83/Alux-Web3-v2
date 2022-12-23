@@ -352,11 +352,12 @@ function ListingPage({}: Props) {
         <main className="max-w-6xl mx-auto p-2 flex flex-col lg:flex-row space-y-10 space-x-5 pr-10 my-3">
           <div className="p-10 mx-auto lg:mx-0 max-w-md xl:max-w-6xl">
             <ListingCard noHover>
-              <div className="cursor-default overflow-hidden  group-hover:rotate-1 transition-transform duration-200 ease-out p-3 rounded-md border dark:border-[#17303b] mx-auto lg:mx-0 max-w-md lg:max-w-md">
+              <div className="cursor-default overflow-hidden p-3 rounded-md border dark:border-[#17303b] mx-auto lg:mx-0 max-w-md lg:max-w-md">
                 <MediaRenderer
                   className="rounded-lg"
                   src={listing.asset.image}
                 />
+                {/* Pull images form IPFS */}
               </div>
             </ListingCard>
           </div>
@@ -364,22 +365,18 @@ function ListingPage({}: Props) {
           <section className="flex-1 space-y-5">
             <div className="">
               <h1 className="text-lg font-bold">
-                WA Nature Home
+                LA Condominium
               </h1>
-              <p className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pb-2">
+              <p className="text-gray-600 dark:text-gray-300 text-sm py-2">
                 {listing.asset.description}
               </p>
-              <h5 className="text-base font-semibold text-gray-600">
+              <h5 className="text-base font-semibold text-gray-600 pl-5">
                 {listing.asset.name}
               </h5>
               <ul className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2 pl-5">
-                <li>
-                  Property Type: Single Family
-                </li>
-                <li>Bedrooms: 4</li>
-                <li>Bathrooms: 3</li>
-                <li>Square Feet: 2100</li>
-                <li>Year Built: 2020</li>
+                <li>Bedrooms: 3</li>
+                <li>Bathrooms: 2</li>
+                <li>Square Feet: 1 470</li>
               </ul>
 
               <p className="flex items-center text-xs pt-2 sm:text-base text-gray-500">
@@ -454,7 +451,7 @@ function ListingPage({}: Props) {
           </section>
         </main>
       )}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
