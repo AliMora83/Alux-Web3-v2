@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           {loadingListings ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-5 lg:mx-auto">
               {/* Skeleton Loading */}
-              {Array(8)
+              {Array(4)
                 .fill(0)
                 .map((_, index) => (
                   <NftSkeleton key={index} />

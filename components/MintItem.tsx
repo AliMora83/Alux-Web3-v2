@@ -145,7 +145,7 @@ function MintItem({
             required
           />
         </div>
-        <div className="grid grid-cols-2 gap-y-6">
+        <div className="grid grid-cols-2 gap-y-6 gap-2 lg:gap-5">
           <div>
             <label
               htmlFor="typeOfProperty"
@@ -160,13 +160,13 @@ function MintItem({
               onChange={(e) =>
                 setTypeOfProperty(e.target.value)
               }
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0EA7E6] focus:border-[#0EA7E6] inline w-40 p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#0EA7E6] dark:focus:border-[#0EA7E6]"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0EA7E6] focus:border-[#0EA7E6] inline w-full p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#0EA7E6] dark:focus:border-[#0EA7E6]"
               placeholder="Single family home"
               value={typeOfProperty}
               required
             />
           </div>
-          <div className="ml-auto">
+          <div className="">
             <label
               htmlFor="bedrooms"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -180,33 +180,14 @@ function MintItem({
               onChange={(e) =>
                 setBedrooms(e.target.value)
               }
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0EA7E6] focus:border-[#0EA7E6] inline w-36 p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#0EA7E6] dark:focus:border-[#0EA7E6]"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0EA7E6] focus:border-[#0EA7E6] inline w-full p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#0EA7E6] dark:focus:border-[#0EA7E6]"
               placeholder="eg. 4"
               value={bedrooms}
               required
             />
           </div>
+
           <div>
-            <label
-              htmlFor="bathrooms"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Bathrooms
-            </label>
-            <input
-              type="text"
-              id="bathrooms"
-              name="bathrooms"
-              onChange={(e) =>
-                setBathrooms(e.target.value)
-              }
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0EA7E6] focus:border-[#0EA7E6] inline w-36 p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#0EA7E6] dark:focus:border-[#0EA7E6]"
-              placeholder="eg. 3"
-              value={bathrooms}
-              required
-            />
-          </div>
-          <div className="ml-auto">
             <label
               htmlFor="squareFeet"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -220,9 +201,29 @@ function MintItem({
               onChange={(e) =>
                 setSquareFeet(e.target.value)
               }
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0EA7E6] focus:border-[#0EA7E6] inline w-36 p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#0EA7E6] dark:focus:border-[#0EA7E6]"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0EA7E6] focus:border-[#0EA7E6] inline w-full p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#0EA7E6] dark:focus:border-[#0EA7E6]"
               placeholder="eg. 2200"
               value={squareFeet}
+              required
+            />
+          </div>
+          <div className="">
+            <label
+              htmlFor="bathrooms"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              Bathrooms
+            </label>
+            <input
+              type="text"
+              id="bathrooms"
+              name="bathrooms"
+              onChange={(e) =>
+                setBathrooms(e.target.value)
+              }
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0EA7E6] focus:border-[#0EA7E6] inline w-full p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#0EA7E6] dark:focus:border-[#0EA7E6]"
+              placeholder="eg. 3"
+              value={bathrooms}
               required
             />
           </div>
@@ -238,11 +239,12 @@ function MintItem({
                             listed for sale!"
           className="h-4 w-4 flex-shrink-0"
         />
-        <span className="">
-          By adding your property here, you're
-          Minting an NFT of the item into your
-          wallet which may then be listed for
-          sale!
+        <span className="md:w-4/5">
+          By adding your NFT Property here, you're
+          Minting an NFT of the Property onto your
+          wallet, which may then be listed for
+          sale on Alux Web3 Real Estate
+          Marketplace!
         </span>
       </p>
     </main>

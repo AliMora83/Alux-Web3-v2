@@ -147,7 +147,7 @@ function Header({
 
         <hr className="mt-2 dark:border-[#17303b]" />
 
-        <section className="flex justify-between items-center uppercase space-x-4 py-10 font-light">
+        <section className="flex justify-between items-center uppercase space-x-4 pt-20 pb-16 font-light">
           <div className="cursor-pointer w-32 flex-shrink-0 relative">
             <Link href="/">
               <Image
@@ -165,81 +165,69 @@ function Header({
                             Shop by Category
                         </p>
                         <HiOutlineChevronDown className="flex-shrink-0 text-sm" />
-                    </button> */}
+              </button> */}
 
           {/* Search Code  */}
-          {searchString && setSearchString ? (
-            <form className="flex items-center flex-1">
-              <label
-                htmlFor="voice-search"
-                className="sr-only"
-              >
-                Search
-              </label>
-              <div className="relative w-full">
-                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg
-                    aria-hidden="true"
-                    className="w-5 h-5 text-gray-500 dark:text-gray-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  id="voice-search"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0f5573] focus:border-[#0EA7E6] block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:[#0EA7E6] dark:focus:border-[#0EA7E6]"
-                  placeholder="Search"
-                  required
-                  value={searchString}
-                  onChange={(e) =>
-                    setSearchString(
-                      e.target.value
-                    )
-                  }
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="h-btn"
-              >
+          <form className="flex items-center flex-1">
+            <label
+              htmlFor="voice-search"
+              className="sr-only"
+            >
+              Search
+            </label>
+            <div className="relative w-full">
+              <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                 <svg
                   aria-hidden="true"
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    fillRule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
-                <span className="hidden md:inline-flex">
-                  Search
-                </span>
-              </button>
-            </form>
-          ) : (
-            <div>
-              <p className="tracking-widest text-sm hover:font-bold duration-200 ease-out">
-                The Prime Web3 Real Estate
-                Investment Platform for future
-                Billionaires
-              </p>
+              </div>
+              <input
+                type="text"
+                id="voice-search"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#0f5573] focus:border-[#0EA7E6] block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:[#0EA7E6] dark:focus:border-[#0EA7E6]"
+                placeholder="Search"
+                required
+                value={searchString}
+                // onChange={(e) =>
+                //   setSearchString(e.target.value)
+                // }
+              />
             </div>
-          )}
+
+            <button
+              type="submit"
+              className="h-btn"
+            >
+              <svg
+                aria-hidden="true"
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+              <span className="hidden md:inline-flex">
+                Search
+              </span>
+            </button>
+          </form>
 
           <button
             onClick={() => {
@@ -254,7 +242,13 @@ function Header({
             List Item
           </button>
         </section>
-        <hr className="mt-2 dark:border-[#17303b]" />
+        <div className="items-center uppercase text-center space-x-4 pb-20 font-light">
+          <p className="tracking-widest text-base hover:font-bold transition-all duration-500 ease-in-out">
+            The Prime Web3 Real Estate Investment
+            Platform for future Billionaires
+          </p>
+        </div>
+        <hr className="my-2 dark:border-[#17303b]" />
       </div>
 
       {/* Connect to Wallet Modal */}
