@@ -367,7 +367,7 @@ function ListingPage({}: Props) {
           <section className="flex-1 space-y-5">
             <div className="">
               <h1 className="text-lg font-bold">
-                {listing.asset.typeOfProperty}
+                Heading here
               </h1>
               <p className="text-gray-600 dark:text-gray-300 text-sm py-2">
                 {listing.asset.description}
