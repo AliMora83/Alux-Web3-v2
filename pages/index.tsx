@@ -35,6 +35,7 @@ const Home: NextPage = () => {
         .includes(searchString.toLowerCase());
     });
   }, [listings, searchString]);
+  console.log(listings);
 
   return (
     <>
