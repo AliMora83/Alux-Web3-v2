@@ -82,16 +82,24 @@ function ListItem({
                         setSelectedNft(nft);
                       }
                     }}
-                    className="flex flex-col bg-gray-100 -m-5 rounded-lg p-5 w-48"
+                    className="flex flex-col bg-gray-100 -m-5 rounded-lg p-2 w-72"
                   >
                     <MediaRenderer
-                      className="h-36 rounded-lg"
+                      className="rounded-lg w-72"
                       src={nft.metadata.image}
                     />
                     <p className="truncate pt-2 text-base font-md text-[#080a0b]">
+                      {
+                        nft.metadata
+                          .typeOfProperty
+                      }
+                    </p>
+
+                    <p className="truncate pb-2 text-xs font-md text-gray-400">
                       {nft.metadata.name}
                     </p>
-                    <p className="truncate text-xs text-gray-400 dark-text-white">
+                    <hr />
+                    <p className="text-xs text-gray-400 pt-2">
                       {nft.metadata.description}
                     </p>
                   </div>
@@ -110,7 +118,7 @@ function ListItem({
                 htmlFor="directListing"
                 className="border-r font-light"
               >
-                Direct Listing/Fixed Price
+                Direct Listing
               </label>
               <input
                 type="radio"
@@ -123,7 +131,7 @@ function ListItem({
                 }
               />
 
-              <label
+              {/* <label
                 htmlFor="auctionListing"
                 className="border-r font-light"
               >
@@ -138,7 +146,7 @@ function ListItem({
                 onChange={() =>
                   setListingType("auctionListing")
                 }
-              />
+              /> */}
 
               <label
                 htmlFor="price"
@@ -149,7 +157,7 @@ function ListItem({
               <input
                 type="text"
                 placeholder="0.05"
-                className="outline-none bg-gray-100 p-5 dark:text-ebayDark border"
+                className="outline-none bg-gray-100 p-3 border rounded-md"
                 onChange={(e) =>
                   setPrice(e.target.value)
                 }

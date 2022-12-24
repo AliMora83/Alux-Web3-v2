@@ -372,7 +372,7 @@ function ListingPage({}: Props) {
               <p className="text-gray-600 dark:text-gray-300 text-sm py-2">
                 {listing.asset.description}
               </p>
-              <h5 className="text-base font-semibold text-gray-600 pl-5">
+              <h5 className="text-base font-semibold text-gray-600 dark:text-gray-400 pl-5">
                 {listing.asset.name}
               </h5>
               <ul className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2 pl-5">

@@ -65,22 +65,28 @@ const Home: NextPage = () => {
                     className="flex flex-col"
                   >
                     <ListingCard>
-                      <div className="flex flex-col p-2 space-y-5">
+                      <div className="flex flex-col p-2 space-y-2">
                         <div className="flex-1 flex flex-col pb-2 items-center">
                           <MediaRenderer
-                            className="rounded-lg h-44"
+                            className="rounded-t-lg h-44"
                             src={
                               listing.asset.image
                             }
                           />
                         </div>
 
-                        <div className="pt-2 space-y-4">
-                          <h2 className="text-md truncate text-gray-500 font-bold">
-                            {listing.asset.name}
+                        <div className="pt-2 space-y-2">
+                          <h2 className="text-md truncate text-gray-700 dark:text-white/60 font-bold">
+                            {
+                              listing.asset
+                                .typeOfProperty
+                            }
                           </h2>
-                          <hr className="border-[#0EA7E6]" />
-                          <p className="truncate text-xs text-gray-600 dark:text-white/60">
+                          {/* <hr className="" /> */}
+                          <p className="truncate text-xs text-[#0EA7E6]">
+                            {listing.asset.name}
+                          </p>
+                          <p className="text-xs truncate text-gray-600 dark:text-white/60 line-clamp-2">
                             {
                               listing.asset
                                 .description
@@ -88,44 +94,46 @@ const Home: NextPage = () => {
                           </p>
                         </div>
 
-                        <p className="flex items-center space-x-1">
-                          <span className="font-bold text-black dark:text-white text-lg">
-                            {
-                              listing
-                                .buyoutCurrencyValuePerToken
-                                .displayValue
-                            }
-                          </span>
-                          <span className="text-gray-600 dark:text-gray-400 text-sm pl-1">
-                            {
-                              listing
-                                .buyoutCurrencyValuePerToken
-                                .symbol
-                            }
-                          </span>
-                        </p>
-
-                        <div
-                          className={[
-                            "flex space-x-1 items-center justify-end text-xs w-fit ml-auto p-2 rounded-lg text-white",
-                            listing.type ===
-                            ListingType.Direct
-                              ? "bg-[#2c2b2b]"
-                              : "bg-[#0EA7E6]",
-                          ].join(" ")}
-                        >
-                          <p>
-                            {listing.type ===
-                            ListingType.Direct
-                              ? "Buy Now"
-                              : "Auction"}
+                        <div className="flex pt-5">
+                          <p className="flex items-center space-x-1">
+                            <span className="font-bold text-black dark:text-white text-lg">
+                              {
+                                listing
+                                  .buyoutCurrencyValuePerToken
+                                  .displayValue
+                              }
+                            </span>
+                            <span className="text-gray-600 dark:text-gray-400 text-sm pl-1">
+                              {
+                                listing
+                                  .buyoutCurrencyValuePerToken
+                                  .symbol
+                              }
+                            </span>
                           </p>
-                          {listing.type ===
-                          ListingType.Direct ? (
-                            <BanknotesIcon className="h-4" />
-                          ) : (
-                            <ClockIcon className="h-4" />
-                          )}
+
+                          <div
+                            className={[
+                              "flex space-x-1 items-center justify-end text-xs w-fit ml-auto p-2 rounded-lg text-white",
+                              listing.type ===
+                              ListingType.Direct
+                                ? "bg-[#2c2b2b]"
+                                : "bg-[#0EA7E6]",
+                            ].join(" ")}
+                          >
+                            <p>
+                              {listing.type ===
+                              ListingType.Direct
+                                ? "Buy Now"
+                                : "Auction"}
+                            </p>
+                            {listing.type ===
+                            ListingType.Direct ? (
+                              <BanknotesIcon className="h-4" />
+                            ) : (
+                              <ClockIcon className="h-4" />
+                            )}
+                          </div>
                         </div>
                       </div>
                     </ListingCard>
