@@ -29,7 +29,7 @@ function Footer({}: Props) {
               href="https://alimora-portfolio.vercel.app/"
               target="_blank"
             >
-              Ali Mora.
+              Ali Mora
             </a>
           </span>
         </p>
