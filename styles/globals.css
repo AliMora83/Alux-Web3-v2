@@ -22,7 +22,7 @@
     }
 
     .neonBtn {
-        @apply relative flex items-center justify-center space-x-4 divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none text-black transition duration-200 hover:text-[#0f5573] dark:bg-black dark:text-white dark:hover:text-[#0EA7E6];
+        @apply relative flex items-center justify-center space-x-4 divide-gray-600 rounded-lg bg-white px-2 py-2 leading-none text-black transition duration-200 hover:text-[#0f5573] dark:bg-black dark:text-white dark:hover:text-[#0EA7E6];
     }
 
     .h-btn {

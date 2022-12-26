@@ -140,7 +140,7 @@ function Header({
           <div className="cursor-pointer w-32 flex-shrink-0 relative">
             <Link href="/">
               <Image
-                className="h-full w-full object-contain position"
+                className="h-full w-full"
                 src="/logo.svg"
                 width={100}
                 height={100}
@@ -223,7 +223,7 @@ function Header({
             </form>
           ) : (
             <div>
-              <p className="tracking-widest text-sm hover:font-bold duration-500 ease-in-out">
+              <p className="tracking-widest text-center text-xs md:text-sm hover:font-bold duration-500 ease-in-out">
                 The Prime Web3 Real Estate
                 Investment Platform for future
                 Billionaires
@@ -239,7 +239,7 @@ function Header({
                 );
               openListItem();
             }}
-            className="inline-flex bg-transparent text-[#0EA7E6] dark:text-[#0EA7E6] hover:bg-[#080a0b] hover:text-[#0EA7E6] px-5 md:px-5 py-2 border-2 border-[#0EA7E6] dark:border-[#0EA7E6] dark:hover:bg-[#0EA7E6] dark:hover:text-[#080a0b] transition-colors duration-200 rounded-lg"
+            className="inline-flex bg-transparent text-[#0EA7E6] dark:text-[#0EA7E6] hover:bg-[#080a0b] hover:text-[#0EA7E6] px-2 md:px-5 py-2 border-2 border-[#0EA7E6] dark:border-[#0EA7E6] dark:hover:bg-[#0EA7E6] dark:hover:text-[#080a0b] transition-colors duration-200 rounded-lg text-xs md:text-sm"
           >
             List NFT
           </button>
@@ -261,7 +261,7 @@ function Header({
       {/* Inventory Modal */}
       <DrawerModal
         isLoading={isMinting}
-        headerText="Add an Item to the Marketplace"
+        headerText="Add an Property NFT"
         ref={inventoryModalRef}
         successBtnText={"Add/Mint Item"}
         onSuccessClick={mintNtf}
@@ -290,7 +290,7 @@ function Header({
           isDirectListingLoading ||
           isAuctionListingLoading
         }
-        headerText="List an Item"
+        headerText="List an NFT"
         ref={listItemModalRef}
         successBtnText={
           networkMismatch

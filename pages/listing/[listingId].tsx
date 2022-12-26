@@ -354,7 +354,7 @@ function ListingPage({}: Props) {
       )}
 
       {!isLoading && listing && (
-        <main className="max-w-6xl mx-auto p-2 flex flex-col lg:flex-row space-y-10 space-x-5 pr-10 my-3">
+        <main className="max-w-6xl mx-auto p-2 flex flex-col lg:flex-row space-y-10 space-x-5 my-3">
           <div className="p-10 mx-auto lg:mx-0 max-w-md xl:max-w-6xl">
             <ListingCard noHover>
               <div className="cursor-default overflow-hidden p-3 rounded-md border dark:border-[#17303b] mx-auto lg:mx-0 max-w-md lg:max-w-md">
@@ -379,7 +379,7 @@ function ListingPage({}: Props) {
               <div className="flex items-center">
                 <GlobeAltIcon className="h-5 text-[#0EA7E6]" />
                 <a
-                  href="https://maps.google.com/?q=location,here"
+                  href="https://maps.google.com/?q=location-here"
                   target="_blank"
                 >
                   <h5 className="text-sm font-normal text-[#0EA7E6] pl-1">
@@ -394,7 +394,7 @@ function ListingPage({}: Props) {
               </ul>
 
               <div className="grid grid-cols-2 items-center py-2">
-                <p className="flex items-center text-xs pt-2 sm:text-base text-gray-500">
+                <p className="flex items-center text-xs sm:text-base text-gray-500">
                   <UserCircleIcon className="h-5" />
                   <span className="font-bold pr-2 pl-1 text-sm">
                     Seller{" "}
@@ -412,7 +412,7 @@ function ListingPage({}: Props) {
                 <a
                   href="https://api.whatsapp.com/send?phone=18027720076"
                   target="_blank"
-                  className="neonBtn bg-[#0EA7E6] dark:text-white dark:bg-[#0EA7E6] py-2 px-5 w-48 rounded-md text-white text-sm hover:text-[#094863] dark:hover:text-[#080a0b]"
+                  className="neonBtn bg-[#0EA7E6] dark:text-white dark:bg-[#0EA7E6] w-full rounded-md text-white text-sm hover:text-[#094863] dark:hover:text-[#080a0b]"
                 >
                   <p className="font-bold text-sm">
                     Book a tour
@@ -451,14 +451,14 @@ function ListingPage({}: Props) {
 
               <button
                 onClick={buyNft}
-                className="group relative col-start-2 mt-5 font-bold rounded-full w-44 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="group relative col-start-2 mt-5 font-bold rounded-full disabled:opacity-50 disabled:cursor-not-allowed w-full"
                 disabled={
                   isBuying ||
                   isMakingOffer ||
                   isMakingBid
                 }
               >
-                <div className="neonBtn bg-[#080a0b] dark:text-white dark:bg-[#0EA7E6] py-2 px-5 w-48 rounded-md text-white text-sm hover:text-[#0EA7E6] dark:hover:text-[#080a0b]">
+                <div className="neonBtn bg-[#080a0b] dark:text-white dark:bg-[#0EA7E6]  w-full rounded-md text-white text-sm hover:text-[#0EA7E6] dark:hover:text-[#080a0b]">
                   {isBuying ||
                   isMakingOffer ||
                   isMakingBid ? (

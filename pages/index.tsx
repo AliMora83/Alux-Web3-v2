@@ -36,7 +36,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-tr from-gray-400/[0.50] to-gray-200[0.35]  dark:from-[#080a0b] dark:to-black min-h-screen pb-20 md:pb-10">
+      <div className="bg-gradient-to-tr from-gray-400/[0.50] to-gray-200[0.35]  dark:from-[#080a0b] dark:to-black min-h-screen pb-20 md:pb-10 relative">
         <Header
           searchString={searchString}
           setSearchString={setSearchString}
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                 ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mx-5 lg:mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5 lg:mx-auto">
               {filteredListings?.map(
                 (listing) => (
                   <Link
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
 
                         <div className="flex pt-5">
                           <p className="flex items-center space-x-1">
-                            <span className="font-bold text-black dark:text-white text-lg">
+                            <span className="font-bold text-black dark:text-white text-md">
                               {
                                 listing
                                   .buyoutCurrencyValuePerToken
