@@ -1,7 +1,4 @@
-import {
-  BanknotesIcon,
-  ClockIcon,
-} from "@heroicons/react/24/outline";
+import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import { MediaRenderer } from "@thirdweb-dev/react";
 import type { NextPage } from "next";
 
@@ -76,16 +73,21 @@ const Home: NextPage = () => {
                         </div>
 
                         <div className="pt-2 space-y-2">
-                          <h2 className="text-md truncate text-gray-700 dark:text-white/60 font-bold">
+                          <h2 className="text-md truncate text-gray-700 dark:text-white/60 font-bold leading-6">
                             {
                               listing.asset
                                 .typeOfProperty
                             }
                           </h2>
                           {/* <hr className="" /> */}
-                          <p className="truncate text-xs text-[#0EA7E6]">
-                            {listing.asset.name}
-                          </p>
+
+                          <div className="flex">
+                            <GlobeAltIcon className="h-4 mr-2 text-[#0EA7E6]" />
+                            <p className="truncate text-xs text-[#0EA7E6]">
+                              {listing.asset.name}
+                            </p>
+                          </div>
+
                           <p className="text-xs truncate text-gray-600 dark:text-white/60 line-clamp-2">
                             {
                               listing.asset
@@ -114,7 +116,7 @@ const Home: NextPage = () => {
 
                           <div
                             className={[
-                              "flex space-x-1 items-center justify-end text-xs w-fit ml-auto p-2 rounded-lg text-white",
+                              "flex space-x-1 items-center justify-end text-xs w-fit ml-auto py-2 px-4 rounded-lg text-white",
                               listing.type ===
                               ListingType.Direct
                                 ? "bg-[#2c2b2b]"
@@ -124,15 +126,9 @@ const Home: NextPage = () => {
                             <p>
                               {listing.type ===
                               ListingType.Direct
-                                ? "Buy Now"
+                                ? "View more"
                                 : "Auction"}
                             </p>
-                            {listing.type ===
-                            ListingType.Direct ? (
-                              <BanknotesIcon className="h-4" />
-                            ) : (
-                              <ClockIcon className="h-4" />
-                            )}
                           </div>
                         </div>
                       </div>

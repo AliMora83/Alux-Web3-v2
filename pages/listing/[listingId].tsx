@@ -1,4 +1,7 @@
-import { UserCircleIcon } from "@heroicons/react/24/solid";
+import {
+  UserCircleIcon,
+  GlobeAltIcon,
+} from "@heroicons/react/24/solid";
 import {
   MediaRenderer,
   useContract,
@@ -372,27 +375,50 @@ function ListingPage({}: Props) {
               <p className="text-gray-600 dark:text-gray-300 text-sm py-2">
                 {listing.asset.description}
               </p>
-              <h5 className="text-base font-semibold text-gray-600 dark:text-gray-400 pl-5">
-                {listing.asset.name}
-              </h5>
-              <ul className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2 pl-5">
+
+              <div className="flex items-center">
+                <GlobeAltIcon className="h-5 text-[#0EA7E6]" />
+                <a
+                  href="https://maps.google.com/?q=location,here"
+                  target="_blank"
+                >
+                  <h5 className="text-sm font-normal text-[#0EA7E6] pl-1">
+                    {listing.asset.name}
+                  </h5>
+                </a>
+              </div>
+              <ul className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2 pl-6">
                 <li>{`Bedrooms: ${listing.asset.bedrooms}`}</li>
                 <li>{`Bathrooms: ${listing.asset.bathrooms}`}</li>
                 <li>{`Square Feet: ${listing.asset.squareFeet}`}</li>
               </ul>
 
-              <p className="flex items-center text-xs pt-2 sm:text-base text-gray-500">
-                <UserCircleIcon className="h-5" />
-                <span className="font-bold pr-1 text-sm">
-                  Seller{" "}
-                </span>
-                {listing.sellerAddress.slice(
-                  0,
-                  4
-                ) +
-                  "..." +
-                  listing.sellerAddress.slice(-4)}
-              </p>
+              <div className="grid grid-cols-2 items-center py-2">
+                <p className="flex items-center text-xs pt-2 sm:text-base text-gray-500">
+                  <UserCircleIcon className="h-5" />
+                  <span className="font-bold pr-2 pl-1 text-sm">
+                    Seller{" "}
+                  </span>
+                  {listing.sellerAddress.slice(
+                    0,
+                    4
+                  ) +
+                    "..." +
+                    listing.sellerAddress.slice(
+                      -4
+                    )}
+                </p>
+
+                <a
+                  href="https://api.whatsapp.com/send?phone=18027720076"
+                  target="_blank"
+                  className="neonBtn bg-[#0EA7E6] dark:text-white dark:bg-[#0EA7E6] py-2 px-5 w-48 rounded-md text-white text-sm hover:text-[#094863] dark:hover:text-[#080a0b]"
+                >
+                  <p className="font-bold text-sm">
+                    Book a tour
+                  </p>
+                </a>
+              </div>
             </div>
             <hr className="px-5 dark:border-[#17303b]" />
 
@@ -432,8 +458,7 @@ function ListingPage({}: Props) {
                   isMakingBid
                 }
               >
-                <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-md bg-gradient-to-r from-gray-600 to-gray-500 opacity-30 blur transition duration-500 group-hover:opacity-70 w-36"></div>
-                <div className="neonBtn bg-[#080a0b] dark:text-white dark:bg-[#0EA7E6] py-3 px-5 w-36 rounded-md text-white text-sm hover:text-[#0EA7E6] dark:hover:text-[#080a0b]">
+                <div className="neonBtn bg-[#080a0b] dark:text-white dark:bg-[#0EA7E6] py-2 px-5 w-48 rounded-md text-white text-sm hover:text-[#0EA7E6] dark:hover:text-[#080a0b]">
                   {isBuying ||
                   isMakingOffer ||
                   isMakingBid ? (
