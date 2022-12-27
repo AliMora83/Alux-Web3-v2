@@ -7,7 +7,7 @@ export default function Home_banner({}: Props) {
     <div className="my-16">
       <section className="bg-gray-100 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-lg shadow-md">
         <div className="container flex flex-col mx-auto md:flex-row">
-          <div className="w-full md:w-1/3">
+          <div className="w-full md:w-1/5 m-5 rounded-md">
             <img src="alux.png" alt="alux" />
           </div>
           <div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8">
