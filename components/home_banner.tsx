@@ -49,19 +49,7 @@ export default function Home_banner({}: Props) {
               assets can represent real-world
               assets such as real estate, real
               estate funds, revenue streams,
-              governance rights, and more. <br />{" "}
-              <br />
-              Once these assets are tokenized,
-              they can be divided into more
-              granular pieces, made accessible to
-              a wider pool of investors, and
-              leveraged to raise capital. Once
-              tokenized, the programmable Ethereum
-              blockchain enables the secure and
-              compliant digitization of the
-              transactions and processes around
-              these assets, including issuance,
-              trading, and lifecycle management.
+              governance rights, and more.
             </p>
             <a
               href="https://consensys.net/blockchain-use-cases/real-estate/"

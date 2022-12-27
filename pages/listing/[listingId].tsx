@@ -386,9 +386,10 @@ function ListingPage({}: Props) {
       )}
 
       {!isLoading && listing && (
-        <main className="max-w-6xl mx-auto p-2 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <main className="max-w-6xl mx-auto p-2 grid grid-cols-1 lg:grid-cols-2 gap-10 z-0">
           <ImageGallery
             items={getGalleryImages()}
+            showNav={false}
           />
 
           <section className="flex-1 space-y-5">
