@@ -126,13 +126,20 @@ function Header({ searchString, setSearchString }: Props) {
                 <hr className="mt-2 dark:border-[#17303b]" />
 
                 <section className="flex justify-between items-center uppercase space-x-4 py-5 font-light">
-                    <div className="cursor-pointer w-24 md:w-32 flex-shrink-0 relative">
+                    <div className="cursor-pointer md:w-32 flex-shrink-0 relative">
                         <Link href="/">
                             <Image
-                                className="h-full w-full"
+                                className="h-full w-full hidden md:block"
                                 src="/logo.svg"
                                 width={100}
                                 height={100}
+                                alt="logo"
+                            />
+                            <Image
+                                className="md:hidden"
+                                src="/logo-mobile.svg"
+                                width={40}
+                                height={40}
                                 alt="logo"
                             />
                         </Link>
@@ -215,7 +222,7 @@ function Header({ searchString, setSearchString }: Props) {
                             if (!address) return toast.error("Connect Wallet");
                             openListItem();
                         }}
-                        className="inline-flex bg-transparent text-[#0EA7E6] dark:text-[#0EA7E6] hover:bg-[#080a0b] hover:text-[#0EA7E6] px-2 md:px-5 py-2 border-2 border-[#0EA7E6] dark:border-[#0EA7E6] dark:hover:bg-[#0EA7E6] dark:hover:text-[#080a0b] transition-colors duration-200 rounded-lg text-xs md:text-sm"
+                        className="inline-flex bg-transparent text-[#0EA7E6] dark:text-[#0EA7E6] hover:bg-[#080a0b] hover:text-[#0EA7E6] px-2 md:px-5 py-2 border-2 border-[#0EA7E6] dark:border-[#0EA7E6] dark:hover:bg-[#0EA7E6] dark:hover:text-[#080a0b] transition-colors duration-200 rounded-lg text-xs md:text-sm flex-shrink-0"
                     >
                         List NFT
                     </button>
