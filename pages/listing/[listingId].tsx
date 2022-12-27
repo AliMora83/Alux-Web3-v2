@@ -15,6 +15,7 @@ import {
 import { ListingType, NATIVE_TOKENS } from "@thirdweb-dev/sdk";
 import { useRouter } from "next/router";
 import React from "react";
+import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 import Countdown from "react-countdown";
 import { RaceBy, Ring } from "@uiball/loaders";
 import toast from "react-hot-toast";
@@ -278,6 +279,23 @@ function ListingPage({}: Props) {
         );
     };
 
+    const getGalleryImages: any = React.useCallback(() => {
+        const galleryImages = listing?.asset.galleryImages as string[];
+        if (galleryImages && galleryImages.length > 0) {
+            return galleryImages.map((image) => ({
+                original: image,
+                thumbnail: image,
+            }));
+        } else {
+            return [
+                {
+                    original: listing?.asset.image,
+                    thumbnail: listing?.asset.image,
+                },
+            ];
+        }
+    }, [listing]);
+
     return (
         <div className="to-gary-100[0.35] dark:to-gray-300[0.25] bg-gradient-to-tr from-gray-300/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-10 md:pb-10">
             <Header />
@@ -296,18 +314,8 @@ function ListingPage({}: Props) {
             {!listing && !isLoading && <h1 className="">Listing not fount</h1>}
 
             {!isLoading && listing && (
-                <main className="max-w-6xl mx-auto p-2 flex flex-col lg:flex-row space-y-10 space-x-5 my-3">
-                    <div className="p-10 mx-auto lg:mx-0 max-w-md xl:max-w-6xl">
-                        <ListingCard noHover>
-                            <div className="cursor-default overflow-hidden p-3 rounded-md border dark:border-[#17303b] mx-auto lg:mx-0 max-w-md lg:max-w-md">
-                                <MediaRenderer
-                                    className="rounded-lg"
-                                    src={listing.asset.image}
-                                />
-                                {/* Pull images form IPFS */}
-                            </div>
-                        </ListingCard>
-                    </div>
+                <main className="max-w-6xl mx-auto p-2 grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <ImageGallery items={getGalleryImages()} />
 
                     <section className="flex-1 space-y-5">
                         <div className="">

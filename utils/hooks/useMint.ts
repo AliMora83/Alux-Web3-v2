@@ -13,6 +13,7 @@ function useMint() {
     const [bedrooms, setBedrooms] = React.useState<string>("");
     const [bathrooms, setBathrooms] = React.useState<string>("");
     const [squareFeet, setSquareFeet] = React.useState<string>("");
+    const [galleryImages, setGalleryImages] = React.useState<string[]>([]);
 
     const [isMinting, setIsMinting] = React.useState<boolean>(false);
 
@@ -56,22 +57,26 @@ function useMint() {
         if (!image) return toast.error("Please upload an image");
         if (!name) return toast.error("Please enter a address");
         if (!description) return toast.error("Please enter a description");
-        if (!typeOfProperty) return toast.error("Please enter a type of property");
+        if (!typeOfProperty)
+            return toast.error("Please enter a type of property");
         if (!bedrooms) return toast.error("Please enter number of bedrooms");
         if (!bathrooms) return toast.error("Please enter number of bathrooms");
         if (!squareFeet) return toast.error("Please enter property size");
+        if (!galleryImages[0])
+            return toast.error("Please upload at least one gallery image");
 
         toast.loading("Minting NFT...");
         setIsMinting(true);
 
         const metadata = {
             name,
-            description, 
+            description,
             typeOfProperty,
             bedrooms,
             bathrooms,
             squareFeet,
             image: image,
+            galleryImages,
         };
 
         try {
@@ -110,6 +115,8 @@ function useMint() {
         setSquareFeet,
         image,
         setImage,
+        galleryImages,
+        setGalleryImages,
         isMinting,
         openAddInventory,
         closeAddInventory,

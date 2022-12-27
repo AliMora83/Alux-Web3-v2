@@ -11,7 +11,6 @@ import Home_banner from "../components/home_banner";
 
 const Home: NextPage = () => {
     const { listings, loadingListings } = useListItem();
-    console.log(listings);
 
     const [searchString, setSearchString] = React.useState<string>("");
 
