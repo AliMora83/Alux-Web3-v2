@@ -92,21 +92,21 @@ function Header({
                 }
               />
             </ButtonNeon>
-          </div>
-          <section className="static top-5 object-center">
-            <ThemeToggler />
-          </section>
-          <div className="flex items-center space-x-4 text-sm">
             <p className="headerLink">
               <span className="hover:font-bold m-2 ease-in-out duration-200 dark:text-gray-300 text-gray-500">
                 <a
                   href="https://www.alux.com/"
                   target="_blank"
                 >
-                  Alux.com
+                  Visit Alux.com
                 </a>
               </span>
             </p>
+          </div>
+          <section className="static top-5 object-center">
+            <ThemeToggler />
+          </section>
+          <div className="flex items-center space-x-4 text-sm">
             <p className="headerLink text-gray-500 hover:font-bold ease-in-out duration-200">
               About
             </p>

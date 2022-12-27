@@ -4,8 +4,8 @@ type Props = {};
 
 export default function Home_banner({}: Props) {
   return (
-    <div className="my-10">
-      <section className="bg-gray-100 text-gray-800 rounded-lg shadow-md">
+    <div className="my-16">
+      <section className="bg-gray-100 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-lg shadow-md">
         <div className="container flex flex-col mx-auto md:flex-row">
           <div className="w-full md:w-1/3">
             <img src="alux.png" alt="alux" />
@@ -24,7 +24,7 @@ export default function Home_banner({}: Props) {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <div>
+              <div className="">
                 <h2 className="text-xl font-semibold leading-none">
                   Blockchain Solutions for Real
                   Estate
@@ -36,7 +36,7 @@ export default function Home_banner({}: Props) {
               </div>
             </div>
 
-            <p className="text-sm text-gray-500 pt-4">
+            <p className="text-sm text-gray-500 pt-4 dark:text-gray-400">
               One of the most exciting ways
               Ethereum benefits the industry is
               through the digital securitization
@@ -62,7 +62,7 @@ export default function Home_banner({}: Props) {
             <a
               href="https://consensys.net/blockchain-use-cases/real-estate/"
               target="_blank"
-              className="pt-3"
+              className="pt-5"
             >
               <button className="self-start px-6 py-2 text-base font-medium rounded-lg bg-[#0EA7E6] text-gray-50">
                 Read more
