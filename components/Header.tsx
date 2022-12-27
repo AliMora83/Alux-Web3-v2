@@ -107,6 +107,9 @@ function Header({
                 </a>
               </span>
             </p>
+            <p className="headerLink text-gray-500 hover:font-bold ease-in-out duration-200">
+              About
+            </p>
 
             <p className="headerLink">
               <span className="hover:font-bold m-2 ease-in-out duration-200 dark:text-gray-300 text-gray-500">
@@ -137,7 +140,7 @@ function Header({
         <hr className="mt-2 dark:border-[#17303b]" />
 
         <section className="flex justify-between items-center uppercase space-x-4 py-5 font-light">
-          <div className="cursor-pointer w-32 flex-shrink-0 relative">
+          <div className="cursor-pointer w-24 md:w-32 flex-shrink-0 relative">
             <Link href="/">
               <Image
                 className="h-full w-full"

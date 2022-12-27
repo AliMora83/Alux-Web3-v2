@@ -12,6 +12,7 @@ import {
 } from "../components";
 import useListItem from "../utils/hooks/useListItem";
 import React from "react";
+import Home_banner from "../components/home_banner";
 
 const Home: NextPage = () => {
   const { listings, loadingListings } =
@@ -139,6 +140,7 @@ const Home: NextPage = () => {
             </div>
           )}
           <div className="hero-image"></div>
+          <Home_banner />
         </main>
         <Footer />
       </div>
