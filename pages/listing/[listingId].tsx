@@ -379,7 +379,7 @@ function ListingPage({}: Props) {
               <div className="flex items-center">
                 <GlobeAltIcon className="h-5 text-[#0EA7E6]" />
                 <a
-                  href="https://maps.google.com/?q=location-here"
+                  href="https://maps.google.com/?q="
                   target="_blank"
                 >
                   <h5 className="text-sm font-normal text-[#0EA7E6] pl-1">
