@@ -341,10 +341,16 @@ function ListingPage({}: Props) {
         galleryImages &&
         galleryImages.length > 0
       ) {
-        return galleryImages.map((image) => ({
-          original: image,
-          thumbnail: image,
-        }));
+        return [
+          {
+            original: listing?.asset.image,
+            thumbnail: listing?.asset.image,
+          },
+          ...galleryImages.map((image) => ({
+            original: image,
+            thumbnail: image,
+          })),
+        ];
       } else {
         return [
           {
@@ -354,6 +360,7 @@ function ListingPage({}: Props) {
         ];
       }
     }, [listing]);
+  console.log(getGalleryImages());
 
   return (
     <div className="to-gary-100[0.35] dark:to-gray-300[0.25] bg-gradient-to-tr from-gray-300/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-10 md:pb-10">
