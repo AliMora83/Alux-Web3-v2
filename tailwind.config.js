@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
@@ -12,11 +9,11 @@ module.exports = {
         primary: "#372948",
         secondary: "#2c2b2b",
         accent: "#e6e2dc",
-        accent2: "#fffdf9",
+        accent2: "#fffdf9"
       },
       backgroundImage: {
         "hero-image": "url('/alux_bg.png')",
-        "footer-image": "url('/')",
+        "footer-image": "url('/')"
       },
       screens: {
         sm: "640px",
@@ -25,12 +22,9 @@ module.exports = {
         md: "768px",
         // => @media (min-width: 768px) { ... }
 
-        lg: "1024px",
-      },
-    },
+        lg: "1024px"
+      }
+    }
   },
-  plugins: [
-    require("tailwind-scrollbar"),
-    "@tailwindcss/line-clamp",
-  ],
+  plugins: [require("tailwind-scrollbar"), "@tailwindcss/line-clamp"]
 };
