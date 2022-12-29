@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  useDisconnect,
-  useMetamask,
-  useWalletConnect,
-  useCoinbaseWallet,
-} from "@thirdweb-dev/react";
+import { useDisconnect, useMetamask, useWalletConnect, useCoinbaseWallet } from "@thirdweb-dev/react";
 import { VscDebugDisconnect } from "react-icons/vsc";
 
 type Props = {
@@ -12,15 +7,10 @@ type Props = {
   closeModal: () => void;
 };
 
-function ConnectModalContent({
-  address,
-  closeModal,
-}: Props) {
+function ConnectModalContent({ address, closeModal }: Props) {
   const connectWithMetaMask = useMetamask();
-  const connectWithWalletConnect =
-    useWalletConnect();
-  const connectWithCoinbaseWallet =
-    useCoinbaseWallet();
+  const connectWithWalletConnect = useWalletConnect();
+  const connectWithCoinbaseWallet = useCoinbaseWallet();
 
   const disconnect = useDisconnect();
   return (
@@ -28,13 +18,8 @@ function ConnectModalContent({
       {!address ? (
         <div className="space-y-3">
           <div className="">
-            <h2 className="text-2xl font-semibold">
-              Connect Wallet
-            </h2>
-            <p className="text-gray-500 text-sm">
-              User your connected wallet to fill
-              out the form automatically.
-            </p>
+            <h2 className="text-2xl font-semibold">Connect Wallet</h2>
+            <p className="text-gray-500 text-sm">User your connected wallet to fill out the form automatically.</p>
           </div>
           <div className="flex flex-col space-y-2">
             <button
