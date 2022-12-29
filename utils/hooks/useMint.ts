@@ -96,7 +96,16 @@ function useMint() {
             setIsMinting(false);
             toast.error("Error minting NFT");
             console.error({ error });
-        }
+        } finally { 
+            setName("")
+            setDescription("")
+            setTypeOfProperty("")
+            setBedrooms("")
+            setBathrooms("")
+            setSquareFeet("")
+            setImage(null)
+            setGalleryImages([])
+         }
     };
 
     return {
