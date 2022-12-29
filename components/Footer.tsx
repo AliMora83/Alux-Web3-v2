@@ -13,7 +13,7 @@ function Footer({}: Props) {
       >
         <a
           href="https://www.alux.com/"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           <Image
             className="rounded-full h-6 w-6 hover:scale-110 ease-in-out duration-150"
@@ -27,7 +27,7 @@ function Footer({}: Props) {
           <span className="font-medium">
             <a
               href="https://alimora-portfolio.vercel.app/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               Ali Mora
             </a>

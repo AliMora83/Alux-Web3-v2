@@ -98,7 +98,7 @@ function Header({
               <span className="hover:font-bold m-2 ease-in-out duration-200 dark:text-gray-300 text-gray-500">
                 <a
                   href="https://www.alux.com/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Visit Alux.com
                 </a>
@@ -113,7 +113,7 @@ function Header({
               <span className="hover:font-bold m-2 ease-in-out duration-200 dark:text-gray-300 text-gray-500">
                 <a
                   href="https://api.whatsapp.com/send?phone=18027720076"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Contact
                 </a>
