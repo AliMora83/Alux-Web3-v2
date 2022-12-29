@@ -271,8 +271,8 @@ function ListingPage({}: Props) {
       {!listing && !isLoading && <h1 className="">Listing not fount</h1>}
 
       {!isLoading && listing && (
-        <main className="max-w-6xl mx-auto p-2 grid grid-cols-1 lg:grid-cols-2 gap-10 z-0">
-          <ImageGallery items={getGalleryImages()} showNav={false} />
+        <main className="max-w-6xl mx-auto p-2 grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <ImageGallery additionalClass="z-0" items={getGalleryImages()} showNav={false} />
 
           <section className="flex-1 space-y-5">
             <div className="">
