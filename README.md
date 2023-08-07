@@ -2,7 +2,7 @@
 
 ## Overview
 
-Web3 Real Estate Platform created to showcase my Software Development skills.
+Web3 Real Estate Platform was created to showcase our Software Development skills.
 <br> 
 <br> 
 LIVE LINK: [Alux-Web3](https://alux-web3-v2.vercel.app/)
